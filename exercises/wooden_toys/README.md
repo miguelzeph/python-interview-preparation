@@ -15,18 +15,18 @@ Implement the function `solve(width, height,nb_blocks,grid)`. This function is e
 
 Input data of the function:
 
-- width: width of the puzzle, in number of cells.
-- height: height of the puzzle, in number of cells.
-- nb_locks: number of blocks initially present in the puzzle.
-- grid: a list of height elements, each of which is a string with a size equal to width.
+- **width**: width of the puzzle, in number of cells.
+- **height**: height of the puzzle, in number of cells.
+- **nb_locks**: number of blocks initially present in the puzzle.
+- **grid**: a list of height elements, each of which is a string with a size equal to width.
 
 The parameters width, height, and nb_blocks do not change during the whole game.
 
 The grid parameter represents the current situation of the puzzle. Each of its characters can take on of the following values:
 
-- . (a dot): an empty square.
-- X: a wall. They are placed on the first and last line, as well as on the first character of each line, to show that only possible exit is to the right. You cannot move these walls.
-- An integer between 0 and nb_blocks-1:a square occupied by a block. The same number can be present several times in the grid, representing a single block that extends over several squares. All cells with the same block number are connected (they are never separated into several isolated groups).
+- **.** (a dot): an empty square.
+- **X**: a wall. They are placed on the first and last line, as well as on the first character of each line, to show that only possible exit is to the right. You cannot move these walls.
+- **An integer between 0 and nb_blocks-1**:a square occupied by a block. The same number can be present several times in the grid, representing a single block that extends over several squares. All cells with the same block number are connected (they are never separated into several isolated groups).
 
 ## Output data of the function
 
